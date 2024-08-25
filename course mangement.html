@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Course Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <nav class="admin-navbar">
+            <h1>Course Management</h1>
+            <ul class="nav-links">
+                <li><a href="#" id="addCourseLink">Add Course</a></li>
+                <li><a href="#" id="manageCoursesLink">Manage Courses</a></li>
+            </ul>
+        </nav>
+
+        <section id="adminContent" class="admin-content">
+            <!-- Content will be loaded dynamically here -->
+        </section>
+    </div>
+
+    <script src="script.js"></script> <!-- Firebase configuration -->
+    <script src="firebaseauth.js"></script> <!-- Authentication logic -->
+    <script src="course-management.js"></script> <!-- Course Management logic -->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="learning-container">
+        <nav class="learning-navbar">
+            <h1>Interactive Learning</h1>
+            <ul class="nav-links">
+                <li><a href="#videoSection">Video Lectures</a></li>
+                <li><a href="#quizSection">Quizzes</a></li>
+                <li><a href="#progressSection">Progress</a></li>
+            </ul>
+        </nav>
+
+        <section id="videoSection" class="learning-section">
+            <h2>Video Lectures</h2>
+            <video id="videoPlayer" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="markAsCompleted" class="primary-btn">Mark as Completed</button>
+        </section>
+
+        <section id="quizSection" class="learning-section">
+            <h2>Quizzes</h2>
+            <div id="quizContainer"></div>
+            <button id="submitQuiz" class="primary-btn">Submit Quiz</button>
+        </section>
+
+        <section id="progressSection" class="learning-section">
+            <h2>Course Progress</h2>
+            <div id="progressTracker"></div>
+            <button id="generateCertificate" class="primary-btn">Generate Certificate</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script> <!-- Firebase configuration -->
+    <script src="firebaseauth.js"></script> <!-- Authentication logic -->
+    <script src="learning.js"></script> <!-- Interactive Learning logic -->
+</body>
+</html>
